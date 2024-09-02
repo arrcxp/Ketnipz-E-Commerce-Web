@@ -2,13 +2,13 @@ import React from "react";
 import { StrictMode, useEffect, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 
-import { createBrowserRouter ,RouterProvider } from 'react-router-dom'
+import { createBrowserRouter , createHashRouter,RouterProvider } from 'react-router-dom'
 import DataContext from './pages/DataContext'
 import Home from './pages/Home'
 import Cart from './pages/Cart'
 import ProductDetail from './pages/ProductDetail'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <Home />
