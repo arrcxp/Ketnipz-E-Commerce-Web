@@ -1,0 +1,61 @@
+table{ width: 70%; }
+thead > tr > th{
+    padding: 16px;
+}
+
+tbody > tr > td > img{ width: 30%; }
+tbody > tr > td,
+thead > tr > th{
+    border-top: none;
+    border-bottom: solid 1px var(--grey__dark);
+}
+
+tbody > tr > td:first-child,
+.cart__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+tbody > tr > td:not(:first-child){ text-align: center; }
+thead > tr > th:first-child{ width: 50%; }
+.product__name__and__size{
+    display: flex;
+    flex-direction: column;
+}
+
+tbody > .tr__2 > td{ padding: 16px; }
+
+.subtotal__out{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.subtotal__in{
+    width: 70%;
+    margin: 16px 0;
+    text-align: right;
+}
+
+.subtotal__in > p{
+    margin: 8px 0;
+    font-size: 12px;
+    color: var(--grey__dark);
+}
+
+.subtotal__in > p > img{
+    height: 17px;
+    margin: 0 3px;
+}
+
+.subtotal__in > button{
+    padding: 16px 84px;
+    background: var(--pink);
+    border: none;
+    color: var(--white);
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
